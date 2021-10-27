@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Simon-Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="alert info">
+
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <strong class="heading">Instructions</strong>
+
+      <ul>
+
+       <li class="items">Simon will give the first signal. (One of the Color Lenses will light up, accompanied by a tone.)</li>
+       <li class="items"> Repeat that signal by touching the same Color Lens. </li>
+       <li class="items"> Simon will repeat the first signal and then add one more. </li>
+       <li class="items"> Repeat those two signals in the same order. </li>
+       <li class="items"> Simon will continue to play the sequence and add one. Continue to repeat Simon for as long as you can! </li>
+       <li class="items"> If you fail to complete the sequence in the correct order or within the time limit, the Buzzer will sound and the
+        game will end. </li>
+      </ul>
+
+    </div>
+    
+    <h1 id="level-title">Press A Key to Start</h1>
+    
+    <div class="container">
+
+      <div class="row">
+
+        <div type="button" id="green" class="btn green">
+
+        </div>
+
+        <div type="button" id="red" class="btn red">
+
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div type="button" id="yellow" class="btn yellow">
+
+        </div>
+        <div type="button" id="blue" class="btn blue">
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="game.js"></script>
+
+  </body>
+
+</html>
