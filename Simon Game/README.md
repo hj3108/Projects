@@ -11,5 +11,5 @@ It creates a series of tones and colours and requires the user to repeat the seq
 
 
 ## Demo
-
+https://hj3108.github.io/Simon-Game/
 
