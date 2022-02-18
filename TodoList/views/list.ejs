@@ -1,0 +1,39 @@
+<%- include("header") -%>
+
+        <!---- Scriplet Tag :- used wherever there is no html used -->
+
+        <!-- <% if(listTitle ==="Saturday" || listTitle==="Sunday") { %>
+            <h1 style="color: aqua"><%= listTitle %> ToDo List </h1>
+        <% } else { %>
+            <h1 style="color: rgb(4, 0, 255)"><%= listTitle %> ToDo List </h1>
+        <% } %> -->
+
+        <div class="box" id="heading">
+           <h1> <%=listTitle %> </h1> 
+        </div>
+
+        <div class="box">
+
+            <% for(var i=0;i<newListItems.length;i++) { %>
+                <div class="item">
+                    <input type="checkbox">
+                    <p> <%= newListItems[i] %></p>
+                </div>    
+            <%}%>
+
+            <form action="/" method="post">
+
+                <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+                <button type="submit" name="list" value=<%= listTitle %> >+</button>
+
+            </form>
+
+        </div>
+
+
+<%- include("footer") -%>
+
+        
+
+        
+    
